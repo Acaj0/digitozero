@@ -1,5 +1,5 @@
 export default function WelcomeText(){   
-    return <div className="bg-[#ffffff] h-80 w-100 flex justify-center items-center text-2xl text-center text-slate-950 overflow-x-auto whitespace-pre">
+    return <div className="bg-[#ffffff] flex justify-center items-center text-lg md:text-2xl text-center text-slate-950 overflow-x-auto whitespace-pre p-10">
     <div className="italic text-balance">
         <h1>Bem-vindo ao site da banda Digito Zero!</h1>
         <p> </p>
