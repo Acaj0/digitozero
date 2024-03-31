@@ -27,12 +27,15 @@ export default function Home() {
           >
             Contato
           </a>
-          <a className="bg-white h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2">
+          <a
+            href="/shows"
+            className="bg-white h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2"
+          >
             Proximos Shows
           </a>
         </div>
-        <div className="flex gap-2 mt-24 items-center ">
-          <a className="flex text-xl">DigitoZero©️</a>
+        <div className="flex gap-2 mt-4 items-center ">
+          <a className="flex text-xl">OverBlownRecords©️</a>
           <a href="https://www.instagram.com/digito.zero/">
             <Image
               src="/instagram.png"
