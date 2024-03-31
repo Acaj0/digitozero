@@ -46,7 +46,7 @@ export default function NavBar() {
         </a>
 
         <a href="/galeria">GALERIA</a>
-        <a>CONTATO</a>
+        <a href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">CONTATO</a>
       </div>
     </div>
   );
@@ -79,7 +79,9 @@ const MobileNav = () => {
           <a href="/shows">SHOWS</a>
           <a href="/setlist">SETLIST</a>
           <a href="/galeria">GALERIA</a>
-          <a>CONTATO</a>
+          <a href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">
+            CONTATO
+          </a>
         </div>
       </SheetContent>
     </Sheet>

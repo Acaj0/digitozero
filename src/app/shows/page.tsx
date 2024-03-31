@@ -35,7 +35,7 @@ export default function Shows() {
     <>
       <NavBar />
       <div className="flex flex-col justify-center items-center pt-10 gap-10">
-        <h1 className="text-2xl italic font-semibold">
+        <h1 className="text-2xl italic">
           Proximos shows da banda
         </h1>
         <div className="flex flex-col w-[300px] md:w-[800px] justify-center gap-5">
