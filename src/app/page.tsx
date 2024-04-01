@@ -1,6 +1,4 @@
-import ImageBanda from "@/components/ImageBanda";
 import NavBar from "@/components/NavBar";
-import WelcomeText from "@/components/WelcomeText";
 import Image from "next/image";
 
 export default function Home() {

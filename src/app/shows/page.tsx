@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { title } from "process";
 
 const showList: {
   title: string;
@@ -13,19 +12,20 @@ const showList: {
   button: { title: string; link: string };
 }[] = [
   {
-    title: "29/06 - Louvada",
-    description: "Evento Sunpet3 dadisjdias ototototottotoot",
+    title: "29/06 - Cervejaria Louvada",
+    description:
+      "Evento Sunpet 3, a banda estará presente pela segunda vez no prestigiado palco da louvada pelo evento Sunpet, Com o intuito de angariar fundo para ajudar as ongs de animais da região",
     button: {
-      title: "INGRESOS",
+      title: "INGRESSOS",
       link: "https://www.instagram.com/sunpet_animal?igsh=MXVhNXpxbTQ0NzY3cw==",
     },
   },
   {
-    title: "00/00 - La Cerva",
-    description: "teste",
+    title: "TBA - Cervejaria La Cerva",
+    description: "Aguardando Data",
     button: {
-      title: "INGRESOS",
-      link: "https://www.google.com/search?client=opera-gx&q=ingressos&sourceid=opera&ie=UTF-8&oe=UTF-8",
+      title: "Reservas",
+      link: "https://api.whatsapp.com/send/?phone=556596843011&text=%E2%80%8ECervejaria+LaCerva+agradece+o+seu+contato.+Como+podemos+ajudar+você%3F&type=phone_number&app_absent=0",
     },
   },
 ];
@@ -35,9 +35,7 @@ export default function Shows() {
     <>
       <NavBar />
       <div className="flex flex-col justify-center items-center pt-10 gap-10">
-        <h1 className="text-2xl italic">
-          Proximos shows da banda
-        </h1>
+        <h1 className="text-2xl italic">Proximos shows da banda</h1>
         <div className="flex flex-col w-[300px] md:w-[800px] justify-center gap-5">
           {showList.map((show, index) => {
             return (
