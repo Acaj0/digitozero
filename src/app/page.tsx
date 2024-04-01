@@ -6,15 +6,15 @@ export default function Home() {
     <div className="bg-[url('/bg.gif')] bg-cover min-h-screen">
       <NavBar />
 
-      <div className="flex flex-col justify-center items-center mt-80">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white font-serif">
+      <div className="flex flex-col justify-center items-center mt-60 md:mt-80">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white font-serif text-center">
           Bem-vindo ao site da banda Digito Zero!
         </h1>
-        <p className="text-xl text-white">
+        <p className="text-xl text-white text-center">
           Somos uma banda apaixonada por música e por compartilhar nossa vibe
           com você.
         </p>
-        <p className="text-xl text-white">
+        <p className="text-xl text-white text-center">
           Queremos que você se sinta parte da nossa jornada musical.
         </p>
 
