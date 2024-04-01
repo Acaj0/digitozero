@@ -32,7 +32,7 @@ export default function Home() {
             Proximos Shows
           </a>
         </div>
-        <div className="flex gap-2 mt-4 items-center ">
+        <div className="flex gap-2 mt-6 items-center ">
           <a className="flex text-xl">OverBlownRecords©️</a>
           <a href="https://www.instagram.com/digito.zero/">
             <Image
