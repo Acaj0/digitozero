@@ -25,7 +25,7 @@ const showList: {
     title: "TBA - Cervejaria La Cerva",
     description: "Aguardando Data",
     button: {
-      title: "Reservas",
+      title: "RESERVAS",
       link: "https://api.whatsapp.com/send/?phone=556596843011&text=%E2%80%8ECervejaria+LaCerva+agradece+o+seu+contato.+Como+podemos+ajudar+você%3F&type=phone_number&app_absent=0",
     },
   },
@@ -47,7 +47,7 @@ export default function Shows() {
                     <div className="flex justify-between">
                       {show.description}
                       <a
-                        className="flex bg-[#f1c72f] w-20 h-8 justify-center items-center rounded-lg italic font-semibold"
+                        className="flex bg-[#f1c72f] w-24 h-8 justify-center items-center rounded-lg italic font-semibold px-6"
                         href={show.button.link}
                       >
                         {show.button.title}

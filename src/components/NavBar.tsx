@@ -55,10 +55,10 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button size="icon" variant="outline">
+        <Button size="icon">
           <svg
-            width="15"
-            height="15"
+            width="25"
+            height="25"
             viewBox="0 0 15 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
