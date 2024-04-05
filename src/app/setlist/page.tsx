@@ -107,8 +107,20 @@ const blocoB: {
     artista: "Britney Spears",
   },
   {
-    musica: "Radioactive",
-    artista: "Imagine Dragons",
+    musica: "Happier Than Ever",
+    artista: "Billie Eilish",
+  },
+  {
+    musica: "As it Was",
+    artista: "Harry Styles",
+  },
+  {
+    musica: "Livin' La Vida Loca ",
+    artista: "Ricky Martin",
+  },
+  {
+    musica: "Blinding Lights",
+    artista: "the Weeknd",
   },
 ];
 

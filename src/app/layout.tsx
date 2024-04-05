@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
+      <head>
+        <link rel="icon" href="/logodigitosite.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
     

@@ -7,7 +7,7 @@ export default function Galeria() {
       <>
         <NavBar />
       </>
-      <div className="flex justify-center pt-2">
+      <div className="flex justify-center items-center pt-2 flex-col">
         <div className=" flex justify-center md:w-[800px] md:h-[600px]">
           <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
             <div>
@@ -38,27 +38,42 @@ export default function Galeria() {
             </div>
           </div>
         </div>
+        <div className=" flex justify-center md:w-[800px] md:h-[600px]">
+          <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
+            <div>
+              <Image
+                src={"/IMG_6670.jpeg"}
+                width={372}
+                height={200}
+                alt="foto do Antonio"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/IMG_6700.png"}
+                width={317}
+                height={200}
+                alt="foto do Antonio"
+              />
+            </div>
+           
+          </div>
+        </div>
       </div>
       <div className="flex gap-2 mt-4 items-center justify-center">
-          <a className="flex text-xl">OverBlownRecords©️</a>
-          <a href="https://www.instagram.com/digito.zero/">
-            <Image
-              src="/instagram.png"
-              height={32}
-              width={32}
-              alt="link do instagram"
-            />
-          </a>
-          <a href="https://open.spotify.com/intl-pt/artist/0mH3A4qseUbSHGPij7PBAO?si=k5mJ8LcbTLS36spMqgg1ew">
-            <Image
-              src="/spot.png"
-              height={32}
-              width={32}
-              alt="link do spotify"
-            />
-          </a>
-        </div>
+        <a className="flex text-xl">OverBlownRecords©️</a>
+        <a href="https://www.instagram.com/digito.zero/">
+          <Image
+            src="/instagram.png"
+            height={32}
+            width={32}
+            alt="link do instagram"
+          />
+        </a>
+        <a href="https://open.spotify.com/intl-pt/artist/0mH3A4qseUbSHGPij7PBAO?si=k5mJ8LcbTLS36spMqgg1ew">
+          <Image src="/spot.png" height={32} width={32} alt="link do spotify" />
+        </a>
+      </div>
     </div>
-    
   );
 }
