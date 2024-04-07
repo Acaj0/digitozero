@@ -8,55 +8,56 @@ export default function Galeria() {
         <NavBar />
       </>
       <div className="flex justify-center items-center pt-2 flex-col">
-        <div className=" flex justify-center md:w-[800px] md:h-[600px]">
-          <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
-            <div>
-              <Image
-                src={"/HoockersAntonio01.jpeg"}
-                width={317}
-                height={200}
-                alt="foto do Antonio"
-              />
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className=" items-center">
-                <Image
-                  src={"/imagebanda.jpeg"}
-                  width={400}
-                  height={400}
-                  alt="foto da banda"
-                />
-              </div>
-              <div className="bg-slate-300 items-center">
-                <Image
-                  src={"/Louvada02.jpeg"}
-                  width={400}
-                  height={500}
-                  alt="foto do show na louvada"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" flex justify-center md:w-[800px] md:h-[600px]">
-          <div className="flex gap-4 flex-col md:flex-row justify-center items-center">
-            <div>
-              <Image
-                src={"/IMG_6670.jpeg"}
-                width={372}
-                height={200}
-                alt="foto do Antonio"
-              />
-            </div>
-            <div>
-              <Image
-                src={"/IMG_6700.png"}
-                width={317}
-                height={200}
-                alt="foto do Antonio"
-              />
-            </div>
-           
+        <div className=" flex justify-center">
+          <div className="gap-4  items-center grid grid-cols-4">
+            <Image
+              src={"/IMG_6575.jpg"}
+              width={317}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/HoockersAntonio01.jpeg"}
+              width={326}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_6671.jpeg"}
+              width={377}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_7114.jpg"}
+              width={377}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_6670.jpeg"}
+              width={377}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_6663.jpg"}
+              width={317}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_6599.jpg"}
+              width={317}
+              height={200}
+              alt="foto do Antonio"
+            />
+            <Image
+              src={"/IMG_6700.png"}
+              width={317}
+              height={200}
+              alt="foto do Antonio"
+            />
           </div>
         </div>
       </div>
