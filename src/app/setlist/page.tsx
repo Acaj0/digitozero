@@ -170,7 +170,7 @@ export default function Setlist() {
   return (
     <div>
       <NavBar />
-      <div className="flex justify-center items-center flex-col p-20 gap-20">
+      <div className=" flex justify-center items-center flex-col p-20 gap-20">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-2xl">Setlist completo</h1>
           <h1>
@@ -180,7 +180,7 @@ export default function Setlist() {
           <h1>Podendo ser escolhidas dependendo do evento e público.</h1>
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <ScrollArea className="flex h-96 w-72 rounded-md border bg-[#151618] text-white">
+          <ScrollArea className="flex h-96 w-72 rounded-md border bg-[#151618] text-white ">
             <div className="p-4">
               <h4 className="flex mb-2 text-sm font-medium leading-none justify-center">
                 BLOCO A
@@ -216,7 +216,7 @@ export default function Setlist() {
               ))}
             </div>
           </ScrollArea>
-          <ScrollArea className="flex h-96 w-72 rounded-md border bg-[#151618] text-white">
+          <ScrollArea className="flex h-96 w-72 rounded-md border bg-[#151618] text-white ">
             <div className="p-4">
               <h4 className="flex mb-2 text-sm font-medium leading-none justify-center">
                 BLOCO C
@@ -237,7 +237,7 @@ export default function Setlist() {
         </div>
       </div>
       <div className="flex gap-2 mt-4 items-center justify-center">
-        <a className="flex text-xl">OverBlownRecords©️</a>
+        <a className="flex text-xl">DigitoZero©️</a>
         <a href="https://www.instagram.com/digito.zero/">
           <Image
             src="/instagram.png"

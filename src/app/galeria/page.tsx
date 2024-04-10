@@ -62,7 +62,7 @@ export default function Galeria() {
         </div>
       </div>
       <div className="flex gap-2 mt-4 items-center justify-center">
-        <a className="flex text-xl">OverBlownRecords©️</a>
+        <a className="flex text-xl">DigitoZero©️</a>
         <a href="https://www.instagram.com/digito.zero/">
           <Image
             src="/instagram.png"
