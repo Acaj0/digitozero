@@ -8,58 +8,6 @@ export default function Galeria() {
         <NavBar />
       </>
       <div className="flex justify-center items-center pt-2 flex-col">
-        <div className=" flex justify-center">
-          <div className="gap-4  items-center grid grid-cols-4">
-            <Image
-              src={"/IMG_6575.jpg"}
-              width={317}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/HoockersAntonio01.jpeg"}
-              width={326}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_6671.jpeg"}
-              width={377}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_7114.jpg"}
-              width={377}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_6670.jpeg"}
-              width={377}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_6663.jpg"}
-              width={317}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_6599.jpg"}
-              width={317}
-              height={200}
-              alt="foto do Antonio"
-            />
-            <Image
-              src={"/IMG_6700.png"}
-              width={317}
-              height={200}
-              alt="foto do Antonio"
-            />
-          </div>
-        </div>
       </div>
       <div className="flex gap-2 mt-4 items-center justify-center">
         <a className="flex text-xl">DigitoZero©️</a>
