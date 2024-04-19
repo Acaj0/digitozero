@@ -30,23 +30,27 @@ export default function NavBar() {
       </div>
 
       <div className="hidden bg-[#151618] h-24 md:flex justify-center items-center gap-20 text-xl text-white">
-        <a href="/shows">SHOWS</a>
-        <a href="/setlist">SETLIST</a>
-        <a href="/">
-          <div className="w-[90px]">
-            <AspectRatio ratio={4 / 4}>
-              <Image
-                src={"/logodigitosite.png"}
-                fill
-                alt="logo da banda"
-                className="rounded-md object-cover"
-              />
-            </AspectRatio>
-          </div>
-        </a>
+        <div className="hidden bg-[#151618] h-24 md:flex justify-between items-center ml-14 gap-20 text-xl text-white" >
+          <a href="/shows">SHOWS</a>
+          <a href="/setlist">SETLIST</a>
+          <a href="/">
+            <div className="w-[90px]">
+              <AspectRatio ratio={4 / 4}>
+                <Image
+                  src={"/logodigitosite.png"}
+                  fill
+                  alt="logo da banda"
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
+            </div>
+          </a>
 
-        <a href="https://www.instagram.com/digito.zero/">INSTAGRAM</a>
-        <a href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">CONTATO</a>
+          <a href="https://www.instagram.com/digito.zero/">INSTAGRAM</a>
+          <a href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">
+            CONTATO
+          </a>
+        </div>
       </div>
     </div>
   );

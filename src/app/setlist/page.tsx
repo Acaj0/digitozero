@@ -168,8 +168,8 @@ const blocoC: {
 
 export default function Setlist() {
   return (
-    <div>
-      <NavBar />
+    <>
+      <NavBar/>
       <div className=" flex justify-center items-center flex-col p-20 gap-20">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-2xl">Setlist completo</h1>
@@ -250,6 +250,6 @@ export default function Setlist() {
           <Image src="/spot.png" height={32} width={32} alt="link do spotify" />
         </a>
       </div>
-    </div>
+    </>
   );
 }
