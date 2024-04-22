@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" bg-[url('/vert.webp')] md:bg-[url('/GIFF-DIGITO-ZERO.webp')] bg-cover min-h-screen">
+    <div className=" bg-[url('/GIF-vertical-fudido-DIGITO-ZERO.gif')] md:bg-[url('/HORIZONTAL-GIFF-FUDIDO.gif')] bg-cover min-h-screen">
       <NavBar />
       <div className="flex flex-col justify-center items-center mt-60 md:mt-80">
         <div className="flex flex-col justify-start md:justify-center items-center p-6 rounded-2xl bg-black/60">
