@@ -4,6 +4,10 @@ O site da banda Digito Zero oferece aos fãs e visitantes uma plataforma envolve
 
 Em suma, o site da banda Digito Zero é mais do que apenas uma plataforma para promover sua música; é um destino digital abrangente e envolvente, projetado para proporcionar uma experiência completa aos fãs.
 
-## UI
-<img width="925" alt="Untitled" src="https://github.com/Acaj0/digitozero/assets/118451701/6d87d3cd-aee8-4dd0-a8db-fa92b51c682c">
+## Desktop UI
+![image](https://github.com/Acaj0/digitozero/assets/118451701/d811988c-d870-429e-88a7-c612673a0b56)
+
+## Mobile UI
+![image](https://github.com/Acaj0/digitozero/assets/118451701/788f6746-be3e-4496-aebe-2a4b0c5efc10)
+
 
