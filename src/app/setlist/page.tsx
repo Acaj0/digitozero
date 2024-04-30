@@ -170,7 +170,7 @@ export default function Setlist() {
   return (
     <>
       <NavBar/>
-      <div className=" flex justify-center items-center flex-col p-20 gap-20">
+      <div className=" flex justify-center items-center flex-col p-10 gap-10">
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-2xl">Setlist completo</h1>
           <h1>
@@ -236,7 +236,7 @@ export default function Setlist() {
           </ScrollArea>
         </div>
       </div>
-      <div className="flex gap-2 mt-4 items-center justify-center">
+      <div className="flex gap-2 mt-1 items-center justify-center">
         <a className="flex text-xl">DigitoZero©️</a>
         <a href="https://www.instagram.com/digito.zero/">
           <Image
