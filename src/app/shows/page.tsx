@@ -21,20 +21,12 @@ const showList: {
       link: "https://www.instagram.com/sunpet_animal?igsh=MXVhNXpxbTQ0NzY3cw==",
     },
   },
-  {
-    title: "TBA - Cervejaria La Cerva",
-    description: "Aguardando Data",
-    button: {
-      title: "RESERVAS",
-      link: "https://api.whatsapp.com/send/?phone=556596843011&text=%E2%80%8ECervejaria+LaCerva+agradece+o+seu+contato.+Como+podemos+ajudar+você%3F&type=phone_number&app_absent=0",
-    },
-  },
 ];
 
 export default function Shows() {
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <div className="flex flex-col justify-center items-center pt-10 gap-10">
         <h1 className="text-2xl italic">Proximos shows da banda</h1>
         <div className="flex flex-col w-[300px] md:w-[800px] justify-center gap-5">
