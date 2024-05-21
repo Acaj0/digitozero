@@ -33,8 +33,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex gap-2 mt-6 items-center bg-white/80 p-1 rounded-lg">
-          <a className="flex text-xl">DigitoZero©️</a>
+        <div className=" hidden gap-2 mt-6 items-center p-1 rounded-lg">
           <a href="https://www.instagram.com/digito.zero/">
             <Image
               src="/instagram.png"
