@@ -31,8 +31,8 @@ export default function NavBar() {
 
       <div className="hidden bg-[#151618] h-24 md:flex justify-center items-center gap-20 text-xl text-white">
         <div className="hidden bg-[#151618] h-24 md:flex justify-between items-center ml-14 gap-20 text-xl text-white" >
-          <a href="/shows">SHOWS</a>
-          <a href="/setlist">SETLIST</a>
+          <a className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200" href="/shows">SHOWS</a>
+          <a className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200" href="/setlist">SETLIST</a>
           <a href="/">
             <div className="w-[90px]">
               <AspectRatio ratio={4 / 4}>
@@ -46,8 +46,8 @@ export default function NavBar() {
             </div>
           </a>
 
-          <a href="https://www.instagram.com/digito.zero/">INSTAGRAM</a>
-          <a href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">
+          <a className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200" href="https://www.instagram.com/digito.zero/">INSTAGRAM</a>
+          <a className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-gray-200" href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!">
             CONTATO
           </a>
         </div>
