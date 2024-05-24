@@ -21,7 +21,7 @@ export default function Home() {
           <div className="flex mt-6 gap-6">
             <a
               href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!"
-              className="bg-[#f1c72f] hover:bg-[#e0c357] w-24 h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="bg-[#f1c72f] hover:bg-[#e0c357] w-24 h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100"
             >
               Contato
             </a>
