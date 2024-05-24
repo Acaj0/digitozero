@@ -6,8 +6,9 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Digito Zero",
-  description: "Site da melhor banda de cuiabá",
+  title: "Banda Digito Zero - Rock Autoral e Covers com Estilo Único",
+  description:
+    "Conheça a Digito Zero, uma banda de Cuiabá que mistura músicas autorais e covers icônicos com uma pegada única. Com shows eletrizantes e um repertório variado, a Digito Zero conquista fãs por onde passa. Visite nosso site para saber mais sobre nossas músicas, conferir a agenda de shows e mais. Junte-se à nossa comunidade de fãs e sinta a energia do verdadeiro rock!",
 };
 
 export default function RootLayout({
@@ -22,6 +23,5 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>{children}</body>
     </html>
-    
   );
 }
