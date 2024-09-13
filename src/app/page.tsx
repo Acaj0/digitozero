@@ -10,10 +10,10 @@ export default function Home() {
           <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight md:text-5xl text-white text-center ">
             Bem-vindo ao site da banda Digito Zero!
           </h1>
-          <p className="text-lg md:text-xl text-white text-center">
+          <h2 className="text-lg md:text-xl text-white text-center">
             Somos uma banda de Cuiabá-MT apaixonada por música e por compartilhar nossa vibe
             com você.
-          </p>
+          </h2>
           <p className="text-lg md:text-xl text-white text-center">
             Queremos que você se sinta parte da nossa jornada musical.
           </p>
