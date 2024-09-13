@@ -11,7 +11,7 @@ export default function Home() {
             Bem-vindo ao site da banda Digito Zero!
           </h1>
           <p className="text-lg md:text-xl text-white text-center">
-            Somos uma banda apaixonada por música e por compartilhar nossa vibe
+            Somos uma banda de Cuiabá-MT apaixonada por música e por compartilhar nossa vibe
             com você.
           </p>
           <p className="text-lg md:text-xl text-white text-center">
