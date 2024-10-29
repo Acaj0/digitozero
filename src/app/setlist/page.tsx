@@ -172,7 +172,7 @@ export default function Setlist() {
       <NavBar/>
       <div className=" flex justify-center items-center flex-col p-10 gap-10">
         <div className="flex justify-center items-center flex-col">
-          <h1 className="text-2xl">Setlist completo</h1>
+          <h1 className="text-4xl font-semibold mb-2">Setlist completo</h1>
           <h1>
             Abaixo, separado por blocos, encontram-se todas as musicas que a
             digito zero atualmente toca.

@@ -1,37 +1,47 @@
+import { BlogPostsPreviewMain } from "@/components/BlogPostPreviewMain";
+import { Fale } from "@/components/Fale";
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
+import { wisp } from "@/lib/wisp";
 
-export default function Home() {
+const Page = async ({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) => {
+  const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
+  const result = await wisp.getPosts({ limit: 6, page });
+  const common = { alt: "Art Direction Example", sizes: "100vw" };
   return (
     <div className=" bg-[url('/GIF-vertical-fudido-DIGITO-ZERO.gif')] md:bg-[url('/HORIZONTAL-GIFF-FUDIDO.gif')] bg-cover min-h-screen">
       <NavBar />
-      <div className="flex flex-col justify-center items-center mt-60 md:mt-80">
-        <div className="flex flex-col justify-start md:justify-center items-center p-6 rounded-2xl bg-black/60">
-          <h1 className="scroll-m-20 text-3xl font-extrabold tracking-tight md:text-5xl text-white text-center ">
+      <div className="flex flex-col justify-center items-center mt-30 md:mt-40">
+        <div className="flex flex-col justify-start md:justify-center items-center p-6 md:rounded-2xl bg-black/60">
+          <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight md:text-5xl text-white text-center ">
             Bem-vindo ao site da banda Digito Zero!
           </h1>
           <h2 className="text-lg md:text-xl text-white text-center">
-            Somos uma banda de Cuiabá-MT apaixonada por música e por compartilhar nossa vibe
-            com você.
+            Somos uma banda de Cuiabá-MT apaixonada por música e por
+            compartilhar nossa vibe com você.
           </h2>
           <p className="text-lg md:text-xl text-white text-center">
             Queremos que você se sinta parte da nossa jornada musical.
           </p>
 
-          <div className="flex mt-6 gap-6">
-            <a
-              href="https://api.whatsapp.com/send?phone=5571982471477&text=Ola,%20gostaria%20de%20contratar%20a%20digito%20zero!"
-              className="bg-[#f1c72f] hover:bg-[#e0c357] hover:animate-pulse w-24 h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100"
-            >
-              Contato
-            </a>
-            <a
-              href="/shows"
-              className="bg-white h-9 flex justify-center items-center rounded-lg font-semibold px-4 py-2 hover:bg-gray-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100"
-            >
-              Proximos Shows
-            </a>
+          <div className="flex mt-2 gap-6">
+            <Fale></Fale>
           </div>
+
+          <div className="container mx-auto px-5 items-center flex flex-col">
+            <h3 className="text-2xl md:text-4xl text-white text-center mt-10">
+              Proximos Shows
+            </h3> 
+            <BlogPostsPreviewMain
+              className="max-w-[800px]"
+              posts={result.posts.slice(0, 2)}
+            />
+          </div>
+          <a href="/shows" className="text-white text-xl hover:underline">Ver Mais...</a>
         </div>
         <div className=" hidden gap-2 mt-6 items-center p-1 rounded-lg">
           <a href="https://www.instagram.com/digito.zero/">
@@ -54,4 +64,5 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+export default Page;
