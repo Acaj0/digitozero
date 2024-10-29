@@ -28,7 +28,7 @@ export function Fale() {
 
   return (
     <div
-      className={`flex flex-row cursor-pointer  fill-white justify-center items-center mt-5 rounded-lg bg-black/80 w-86 p-2 md:w-86 h-12 gap-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300`}
+      className={`flex flex-row cursor-pointer  fill-white justify-center items-center rounded-lg bg-black/80 w-86 p-2 md:w-86 h-12 gap-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300`}
     >
       <span className="relative flex h-3 w-3">
         <span

@@ -22,7 +22,7 @@ export const BlogPostPreviewMain: FunctionComponent<{
         </div>
       </Link>
       <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">
-        <h2 className="font-sans font-semibold tracking-tighter text-white text-2xl md:text-3xl">
+        <h2 className="font-sans font-semibold tracking-tighter text-white text-xl md:text-xl">
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h2>
       </div>
@@ -37,7 +37,7 @@ export const BlogPostsPreviewMain: FunctionComponent<{
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-5 my-5",
+        "grid grid-cols-1 gap-8 lg:gap-10 md:grid-cols-2 md:my-5 my-5",
         className
       )}
     >
