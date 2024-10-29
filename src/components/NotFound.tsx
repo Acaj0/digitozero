@@ -12,7 +12,7 @@ export const NotFound = () => {
 
       <Button asChild className="mt-4">
         <Link href="/">
-          <Undo className="mr-2 h-4 w-4" /> Voltar Para Pagina Principal
+          <Undo className="mr-2 h-4 w-4" />Voltar Para Pagina Principal
         </Link>
       </Button>
     </div>
