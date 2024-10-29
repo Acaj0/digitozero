@@ -1,3 +1,6 @@
+import { BlogPostsPreview } from "@/components/BlogPostPreview";
+import { BlogPostsPagination } from "@/components/BlogPostsPagination";
+import { wisp } from "@/lib/wisp";
 import NavBar from "@/components/NavBar";
 import {
   Accordion,
@@ -23,33 +26,21 @@ const showList: {
   },
 ];
 
-export default function Shows() {
+const Page = async ({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) => {
+  const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
+  const result = await wisp.getPosts({ limit: 6, page });
   return (
     <>
       <NavBar />
-      <div className="flex flex-col justify-center items-center pt-10 gap-10">
-        <h1 className="text-2xl italic">Proximos shows da banda</h1>
-        <div className="flex flex-col w-[300px] md:w-[800px] justify-center gap-5">
-          {showList.map((show, index) => {
-            return (
-              <Accordion type="single" collapsible key={index}>
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>{show.title}</AccordionTrigger>
-                  <AccordionContent>
-                    <div className="flex justify-between">
-                      {show.description}
-                      <a
-                        className="flex bg-[#f1c72f] w-24 h-8 justify-center items-center rounded-lg italic font-semibold px-6"
-                        href={show.button.link}
-                      >
-                        {show.button.title}
-                      </a>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            );
-          })}
+      <div className="flex flex-col justify-center items-center pt-10 ">
+        <h1 className="text-4xl mx-5 font-semibold">Proximos shows da banda</h1>
+        <div className="md:mx-52 mx-5">
+          <BlogPostsPreview posts={result.posts} />
+          <BlogPostsPagination pagination={result.pagination} />
         </div>
         <div className="flex gap-2 mt-4 items-center ">
           <a className="flex text-xl">DigitoZero©️</a>
@@ -73,4 +64,5 @@ export default function Shows() {
       </div>
     </>
   );
-}
+};
+export default Page;
