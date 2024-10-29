@@ -13,53 +13,42 @@ const Page = async ({
   const result = await wisp.getPosts({ limit: 6, page });
   const common = { alt: "Art Direction Example", sizes: "100vw" };
   return (
-    <div className=" bg-[url('/GIF-vertical-fudido-DIGITO-ZERO.gif')] md:bg-[url('/HORIZONTAL-GIFF-FUDIDO.gif')] bg-cover min-h-screen">
+    <div className=" bg-[url('/GIF-vertical-fudido-DIGITO-ZERO.gif')] md:bg-[url('/HORIZONTAL-GIFF-FUDIDO.gif')] md:justify-between flex flex-col bg-cover min-h-screen">
       <NavBar />
-      <div className="flex flex-col justify-center items-center mt-30 md:mt-40">
-        <div className="flex flex-col justify-start md:justify-center items-center p-6 md:rounded-2xl bg-black/60">
-          <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight md:text-5xl text-white text-center ">
-            Bem-vindo ao site da banda Digito Zero!
-          </h1>
-          <h2 className="text-lg md:text-xl text-white text-center">
-            Somos uma banda de Cuiabá-MT apaixonada por música e por
-            compartilhar nossa vibe com você.
-          </h2>
-          <p className="text-lg md:text-xl text-white text-center">
-            Queremos que você se sinta parte da nossa jornada musical.
-          </p>
+      <div className="flex flex-col justify-center md:items-end">
+        <div className="flex flex-col md:flex-row justify-start md:justify-center items-center p-2 w-full md:h-auto h-screen bg-black/60 md:gap-40">
+          <div className="flex flex-col mt-10 md:mt-0 md:w-[500px] items-center">
+            <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight md:text-5xl text-white text-center ">
+              Bem-vindo ao site da banda Digito Zero!
+            </h1>
+            <h2 className="text-lg md:text-xl text-white text-center">
+              Somos uma banda de Cuiabá-MT apaixonada por música e por
+              compartilhar nossa vibe com você.
+            </h2>
+            <p className="text-lg md:text-xl text-white text-center">
+              Queremos que você se sinta parte da nossa jornada musical.
+            </p>
 
-          <div className="flex mt-2 gap-6">
-            <Fale></Fale>
+            <div className="flex mt-10 gap-6">
+              <Fale></Fale>
+            </div>
           </div>
-
-          <div className="container mx-auto px-5 items-center flex flex-col">
+          <div className="items-center flex flex-col">
             <h3 className="text-2xl md:text-4xl text-white text-center mt-10">
-              Proximos Shows
-            </h3> 
+              Últimas Atualizações
+            </h3>
             <BlogPostsPreviewMain
-              className="max-w-[800px]"
+              className="max-w-[500px] md:flex hidden"
               posts={result.posts.slice(0, 2)}
             />
+            <BlogPostsPreviewMain
+              className="max-w-[500px] flex md:hidden"
+              posts={result.posts.slice(0, 1)}
+            />
+            <a href="/shows" className="text-white text-xl hover:underline">
+              Ver Mais...
+            </a>
           </div>
-          <a href="/shows" className="text-white text-xl hover:underline">Ver Mais...</a>
-        </div>
-        <div className=" hidden gap-2 mt-6 items-center p-1 rounded-lg">
-          <a href="https://www.instagram.com/digito.zero/">
-            <Image
-              src="/instagram.png"
-              height={32}
-              width={32}
-              alt="link do instagram"
-            />
-          </a>
-          <a href="https://open.spotify.com/intl-pt/artist/0mH3A4qseUbSHGPij7PBAO?si=k5mJ8LcbTLS36spMqgg1ew">
-            <Image
-              src="/spot.png"
-              height={32}
-              width={32}
-              alt="link do spotify"
-            />
-          </a>
         </div>
       </div>
     </div>
