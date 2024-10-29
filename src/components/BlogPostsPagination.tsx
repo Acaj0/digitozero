@@ -10,7 +10,7 @@ import {
 
 export const BlogPostsPagination = ({
   pagination,
-  basePath = "/posts/?page=",
+  basePath = "/shows/?page=",
   numSiblingPages = 2,
 }: {
   basePath?: string;
