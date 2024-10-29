@@ -2,12 +2,6 @@ import { BlogPostsPreview } from "@/components/BlogPostPreview";
 import { BlogPostsPagination } from "@/components/BlogPostsPagination";
 import { wisp } from "@/lib/wisp";
 import NavBar from "@/components/NavBar";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import Image from "next/image";
 
 const showList: {
